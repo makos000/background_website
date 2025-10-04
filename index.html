@@ -3,13 +3,44 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
+    <title>Donate</title>
     <style>
-      html, body { height: 100%; margin: 0; }
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+
       body {
-        background: #0b5cff; /* solid blue */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0b5cff; /* Blue background */
+      }
+
+      button {
+        padding: 16px 32px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+        background-color: #ff3b3b;
+        border: none;
+        border-radius: 999px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s, transform 0.2s;
+      }
+
+      button:hover {
+        background-color: #ff5959;
+        transform: scale(1.05);
+      }
+
+      button:active {
+        transform: scale(0.98);
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <button id="donateBtn">Donate</button>
+  </body>
 </html>

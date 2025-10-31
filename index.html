@@ -15,21 +15,24 @@
         position: relative;
       }
 
-      #donateRedBtn {
+      .buttonContainer {
         position: absolute;
         top: 10px;
         left: 10px;
       }
 
+      #donateRedBtn {
+        margin-right: 10px;
+      }
       #donateBlueBtn {
-        position: absolute;
-        top: 10px;
-        left: 50px;
+        /* no extra positioning needed */
       }
     </style>
   </head>
   <body>
-    <button id="donateRedBtn">Donate RED</button>
-    <button id="donateBlueBtn">Donate BLUE</button>
+    <div class="buttonContainer">
+      <button id="donateRedBtn">Donate RED</button>
+      <button id="donateBlueBtn">Donate BLUE</button>
+    </div>
   </body>
 </html>

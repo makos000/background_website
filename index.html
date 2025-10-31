@@ -11,15 +11,25 @@
       }
 
       body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background: #0b5cff; /* Blue background */
+        position: relative;
       }
-      
+
+      #donateRedBtn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      #donateBlueBtn {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+      }
     </style>
   </head>
   <body>
-    <button id="donateBtn">Donate</button>
+    <button id="donateRedBtn"></button>
+    <button id="donateBlueBtn"></button>
   </body>
 </html>
